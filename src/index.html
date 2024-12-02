@@ -6,20 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Playground of TailwindCSS</title>
     <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body class="font-poppins bg-body text-white">
     <header class="py-4">
-        <div class="container mx-auto">
-            <div>BookOff.com</div>
-            <div>
-                <a href="#home">ホーム</a>
-                <a href="#home">ポートフォリオ</a>
-                <a href="#home">お客様</a>
-                <a href="#home"><button>お問い合わせ</button></a>
+        <div class="container mx-auto flex justify-between items-center px-8 md:px-14 lg:px-24 w-full">
+            <div class="text-lg font-bold">BookOff.com</div>
+            <div class="space-x-12 hidden md:flex items-center">
+                <a href="#home" class="hover:text-selected-text transition-all duration-300">ホーム</a>
+                <a href="#home" class="hover:text-selected-text transition-all duration-300">ポートフォリオ</a>
+                <a href="#home" class="hover:text-selected-text transition-all duration-300">お客様</a>
+                <a href="#home" class="">
+                    <button class="px-6 py-2 bg-thema font-bold rounded-lg hover:bg-purple-600 transition-all duration-300">お問い合わせ</button></a>
+            </div>
+            <div class="md:hidden">
+                <i class="fa-solid fa-bars"></i>
             </div>
         </div>
     </header>
+    <div id="home" class="container mt-16 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-8"></div>
 </body>
 
 </html>
